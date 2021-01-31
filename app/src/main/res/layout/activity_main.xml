@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     android:gravity="center"
     tools:context=".MainActivity">
 
@@ -14,39 +15,63 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Question to Answer"
-        android:textSize="16sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        android:textSize="30sp"
         android:textAlignment="center"
-        android:layout_marginTop="12dp"
       />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/choice_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="a"
+        android:background="@drawable/question_option_background"
         android:onClick="onClick"
-        android:layout_marginTop="8dp"/>
-    <Button
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/choice_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="b"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/question_option_background"
         android:onClick="onClick"
-        android:layout_marginTop="8dp"/>
-    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"/>
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/choice_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="c"
         android:onClick="onClick"
-        android:layout_marginTop="8dp"/>
-    <Button
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/question_option_background"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"/>
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/choice_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="d"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/question_option_background"
+        android:layout_marginEnd="30dp"
         android:onClick="onClick"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="15dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Results"
-            android:textSize="16sp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
             />
         <TextView
@@ -66,8 +92,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0/0"
-            android:textSize="16sp"
             android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             android:layout_marginTop="8dp"
             />
 

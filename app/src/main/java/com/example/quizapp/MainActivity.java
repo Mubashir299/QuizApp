@@ -1,6 +1,7 @@
 package com.example.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private QuestionBank mQuestionLibrary = new QuestionBank();
     private TextView mScoreView;
     private TextView mQuestionView;
-    private Button mButtonChoice1,mButtonChoice2,mButtonChoice3,mButtonChoice4;
+    private AppCompatButton mButtonChoice1,mButtonChoice2,mButtonChoice3,mButtonChoice4;
     private String mAnswer;
     private  int mScore = 0;
     private  int mQuestionNumber = 0;
@@ -26,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView( R.layout.activity_main );
         mScoreView =(TextView) findViewById( R.id.score_tv);
         mQuestionView = (TextView) findViewById( R.id.question_tv );
-        mButtonChoice1 = (Button) findViewById( R.id.choice_1 );
-        mButtonChoice2 = (Button) findViewById( R.id.choice_2 );
-        mButtonChoice3 = (Button) findViewById( R.id.choice_3 );
-        mButtonChoice4 = (Button) findViewById( R.id.choice_4 );
+        mButtonChoice1 = (AppCompatButton) findViewById( R.id.choice_1 );
+        mButtonChoice2 = (AppCompatButton) findViewById( R.id.choice_2 );
+        mButtonChoice3 = (AppCompatButton) findViewById( R.id.choice_3 );
+        mButtonChoice4 = (AppCompatButton) findViewById( R.id.choice_4 );
         updateQuestion();
         updateScore(mScore);
     }

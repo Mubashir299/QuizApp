@@ -1,6 +1,7 @@
 package com.example.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class HighestScoreActivity extends AppCompatActivity {
-     Button TryAgainBtn;
+    AppCompatButton TryAgainBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -18,7 +19,7 @@ public class HighestScoreActivity extends AppCompatActivity {
 
         TextView txtScore = (TextView) findViewById( R.id.textScore );
         TextView txtHeighScore = (TextView) findViewById( R.id.textHighScore );
-            TryAgainBtn = (Button) findViewById( R.id.try_again_btn );
+            TryAgainBtn = (AppCompatButton) findViewById( R.id.try_again_btn );
         Intent intent = getIntent();
         int score = intent.getIntExtra( "score", 0 );
         txtScore.setText( "Your Score: "+score);
